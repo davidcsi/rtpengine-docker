@@ -1,5 +1,7 @@
 # docker-rtpengine
 
+## NOTE: This docke implementation is designed to be run on AWS on a debian buster.
+
 This is SIPWise rtpengine (previously: rtpproxy-ng, and before that: mediaproxy-ng) properly dockerified as a first-class citizen under the upstream project's preferred linux variant.
 
 Parts of this project were borrowed in part from Binan/rtpengine-docker
