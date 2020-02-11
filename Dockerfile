@@ -1,5 +1,7 @@
 #buster
-# The base host must be debian buster
+# - The base host must be debian buster
+# - You MUST clone rtpengine's repo before launching this.
+
 FROM debian:10-slim
 MAINTAINER David Villasmil <david.villasmil.work@gmail.com>
 
