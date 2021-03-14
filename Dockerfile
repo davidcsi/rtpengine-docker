@@ -19,7 +19,7 @@ RUN wget https://deb.sipwise.com/spce/mr6.2.1/pool/main/b/bcg729/libbcg729-dev_1
 RUN dpkg -i libbcg729-dev_1.0.4+git20180222-0.1~bpo9+1_amd64.deb
 
 WORKDIR /rtpengine
-RUN apt-get install -qqy iproute2 curl iptables iptables-dev dpkg-dev debhelper iptables-dev libcurl4-openssl-dev libglib2.0-dev libhiredis-dev libpcre3-dev libssl-dev libxmlrpc-core-c3-dev markdown zlib1g-dev module-assistant dkms gettext default-libmysqlclient-dev gperf libavcodec-dev libavfilter-dev libavformat-dev libavutil-dev libbcg729-dev libbencode-perl libcrypt-openssl-rsa-perl libcrypt-rijndael-perl libdigest-crc-perl libdigest-hmac-perl libevent-dev libio-multiplex-perl libio-socket-inet6-perl libjson-glib-dev libnet-interface-perl libpcap0.8-dev libsocket6-perl libspandsp-dev libswresample-dev libsystemd-dev nfs-common netcat-openbsd netcat libconfig-tiny-perl && \
+RUN apt-get install -qqy iproute2 curl iptables iptables-dev dpkg-dev debhelper iptables-dev libcurl4-openssl-dev libglib2.0-dev libhiredis-dev libpcre3-dev libssl-dev libxmlrpc-core-c3-dev markdown zlib1g-dev module-assistant dkms gettext default-libmysqlclient-dev gperf libavcodec-dev libavfilter-dev libavformat-dev libavutil-dev libbcg729-dev libbencode-perl libcrypt-openssl-rsa-perl libcrypt-rijndael-perl libdigest-crc-perl libdigest-hmac-perl libevent-dev libio-multiplex-perl libio-socket-inet6-perl libjson-glib-dev libnet-interface-perl libpcap0.8-dev libsocket6-perl libspandsp-dev libswresample-dev libsystemd-dev nfs-common netcat-openbsd netcat libconfig-tiny-perl libwebsockets-dev && \
     dpkg-checkbuilddeps && \
     dpkg-buildpackage -b -us -uc && \
     dpkg -i ../*.deb && \
